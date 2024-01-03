@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\bin\Debug\net7.0\Pattern.exe
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\bin\Debug\net7.0\Pattern.deps.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\bin\Debug\net7.0\Pattern.runtimeconfig.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\bin\Debug\net7.0\Pattern.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\bin\Debug\net7.0\Pattern.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.AssemblyInfo.cs
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\refint\Pattern.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\Pattern.genruntimeconfig.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Pattern\obj\Debug\net7.0\ref\Pattern.dll
