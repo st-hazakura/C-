@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2kgzKeeq8a4MWkFFmx4qd6RPqBIjs0A0gav8Sd8ri+89BCRy8BGtYu/jCVvmAhJNsfEAdv6RRFn1e9EVbbu6Hg==",
+  "dgSpecHash": "Z864nxXBBy3Ob7Sumrg0wC+iecT8kParWS8lWIK2bEZNupMDIetggW1NdcBSJLGiioTrp2CkfavtBY8B+B/qxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Pattern\\Pattern.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Builder\\Pattern.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

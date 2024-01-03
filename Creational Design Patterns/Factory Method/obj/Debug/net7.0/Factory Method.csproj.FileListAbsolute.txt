@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\bin\Debug\net7.0\Factory Method.exe
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\bin\Debug\net7.0\Factory Method.deps.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\bin\Debug\net7.0\Factory Method.runtimeconfig.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\bin\Debug\net7.0\Factory Method.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\bin\Debug\net7.0\Factory Method.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.AssemblyInfo.cs
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\refint\Factory Method.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\Factory Method.genruntimeconfig.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Factory Method\obj\Debug\net7.0\ref\Factory Method.dll

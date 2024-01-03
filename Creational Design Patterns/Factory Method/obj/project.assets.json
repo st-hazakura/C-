@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Builder\\Pattern.csproj",
-      "projectName": "Pattern",
-      "projectPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Builder\\Pattern.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Factory Method\\Factory Method.csproj",
+      "projectName": "Factory Method",
+      "projectPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Factory Method\\Factory Method.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Builder\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Factory Method\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config"
