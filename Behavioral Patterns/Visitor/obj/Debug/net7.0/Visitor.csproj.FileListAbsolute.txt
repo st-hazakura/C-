@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\bin\Debug\net7.0\Visitor.exe
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\bin\Debug\net7.0\Visitor.deps.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\bin\Debug\net7.0\Visitor.runtimeconfig.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\bin\Debug\net7.0\Visitor.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\bin\Debug\net7.0\Visitor.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.AssemblyInfo.cs
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\refint\Visitor.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\Visitor.genruntimeconfig.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Behavioral Patterns\Visitor\obj\Debug\net7.0\ref\Visitor.dll
