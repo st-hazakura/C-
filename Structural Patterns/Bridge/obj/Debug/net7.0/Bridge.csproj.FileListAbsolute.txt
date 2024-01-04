@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\bin\Debug\net7.0\Bridge.exe
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\bin\Debug\net7.0\Bridge.deps.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\bin\Debug\net7.0\Bridge.runtimeconfig.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\bin\Debug\net7.0\Bridge.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\bin\Debug\net7.0\Bridge.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.AssemblyInfo.cs
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\refint\Bridge.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\Bridge.genruntimeconfig.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Structural Patterns\Bridge\obj\Debug\net7.0\ref\Bridge.dll
