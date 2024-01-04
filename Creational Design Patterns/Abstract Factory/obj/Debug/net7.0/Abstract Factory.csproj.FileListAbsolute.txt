@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\bin\Debug\net7.0\Abstract Factory.exe
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\bin\Debug\net7.0\Abstract Factory.deps.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\bin\Debug\net7.0\Abstract Factory.runtimeconfig.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\bin\Debug\net7.0\Abstract Factory.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\bin\Debug\net7.0\Abstract Factory.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.AssemblyInfo.cs
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\refint\Abstract Factory.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\Abstract Factory.genruntimeconfig.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Creational Design Patterns\Abstract Factory\obj\Debug\net7.0\ref\Abstract Factory.dll
