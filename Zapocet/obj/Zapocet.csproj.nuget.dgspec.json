@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj": {}
+    "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Zapocet\\Zapocet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj": {
+    "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Zapocet\\Zapocet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj",
-        "projectName": "Abstract Factory",
-        "projectPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj",
+        "projectUniqueName": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Zapocet\\Zapocet.csproj",
+        "projectName": "Zapocet",
+        "projectPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Zapocet\\Zapocet.csproj",
         "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\obj\\",
+        "outputPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Zapocet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,17 @@
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\bin\Debug\net7.0\Zapocet.exe
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\bin\Debug\net7.0\Zapocet.deps.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\bin\Debug\net7.0\Zapocet.runtimeconfig.json
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\bin\Debug\net7.0\Zapocet.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\bin\Debug\net7.0\Zapocet.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.AssemblyInfo.cs
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\refint\Zapocet.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.pdb
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.genruntimeconfig.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\ref\Zapocet.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.csproj.AssemblyReference.cache
+C:\Users\Home\Desktop\vyučovaní\Programovani\C#\Zapocet\obj\Debug\net7.0\Zapocet.csproj.CopyComplete

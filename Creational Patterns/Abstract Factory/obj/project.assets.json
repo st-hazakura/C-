@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Abstract Factory\\Abstract Factory.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj",
       "projectName": "Abstract Factory",
-      "projectPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Abstract Factory\\Abstract Factory.csproj",
+      "projectPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Abstract Factory\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config"

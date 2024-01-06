@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kMCKtnQmJ4jtn+aqESZNcP97iEm0swX0CfKbSj30ATiN930aOruPO0i5XgEA3OxilF20cQCZaP2gNtks4eWrVQ==",
+  "dgSpecHash": "RyHZl9UQEgzg98K0awj2Bgv/Vf+ESTV7HxYhKGLNogt9yHFJ2xhRyRDca/n6B7Pw+LpK410v4MikYvSbStbscQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Design Patterns\\Abstract Factory\\Abstract Factory.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Desktop\\vyučovaní\\Programovani\\C#\\Creational Patterns\\Abstract Factory\\Abstract Factory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

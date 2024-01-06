@@ -1,0 +1,27 @@
+[
+    {
+        "NazevSalu": "Сценическая Симфония", 
+        "Sections": {
+            "Parter": {"Radek": 8, "MistoRadku": 12}, 
+            "Balcony": {"Radek": 4, "MistoRadku": 9}, 
+            "Box": {"Radek": 3, "MistoRadku": 5}}
+    }, 
+    
+    {
+        "NazevSalu": "Актерский Этюд", 
+        "Sections": {
+            "Parter": {"Radek": 12, "MistoRadku": 14}, 
+            "Balcony": {"Radek": 6, "MistoRadku": 11}, 
+            "Box": {"Radek": 4, "MistoRadku": 6}
+        }
+    }, 
+    
+    {
+        "NazevSalu": "Зал Гармонии", 
+        "Sections": {
+            "Parter": {"Radek": 7, "MistoRadku": 10}, 
+            "Balcony": {"Radek": 5, "MistoRadku": 8}, 
+            "Box": {"Radek": 2, "MistoRadku": 4}
+        }
+    }
+]
