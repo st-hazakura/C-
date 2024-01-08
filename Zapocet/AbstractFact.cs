@@ -45,8 +45,7 @@ namespace Akce{
         public int Price { get; set; }
     }
 
-    public class Kino : IAkce
-    {
+    public class Kino : IAkce{
         private List<Zal> Zaly;
         private List<Filmy> Films;
         private List<Seans> Seansy = new List<Seans>();
@@ -136,6 +135,12 @@ namespace Akce{
             Bilety = Bilety.Where(bilet => 
                 Seansy.Any(seans => seans.ID == bilet.SeansID)).ToList();
         }
+
+        public List<Zal>  GetZalyData(){return Zaly;}
+        public List<Seans> GetSeansyData(){return Seansy;}
+        public void SetSeansyData(List<Seans> seansy){Seansy = seansy;}
+        public List<Bilet> GetBiletyData(){return Bilety;}
+        public void SetBiletyData(List<Bilet> bilety){Bilety = bilety;}
     }
 
 
@@ -151,6 +156,7 @@ namespace Akce{
     }
 
     public class PredstaveniDivadlo{
+        public int ID {get; set;}
         public string NazevSalu {get; set;}
         public string NazvanieSpektakla {get; set;}
         public string Genre {get; set;}
@@ -172,7 +178,9 @@ namespace Akce{
 
     public class BiletDivadlo{
         public int ID { get; set; }
+        public int IDPredstaveni { get; set; }
         public string NazvanieSpektakla {get; set;}
+        public int SekceID {get;set;}
         public string CasZacatku {get; set;}
         public int CisloRadku { get; set; }
         public int MistoRadku {get; set;}
@@ -229,6 +237,7 @@ namespace Akce{
                 }
 
                 PredstaveniD.Add(new PredstaveniDivadlo{
+                    ID = PredstaveniD.Count + 1,
                     NazevSalu = randomZal.NazevSalu,
                     NazvanieSpektakla = randomSpectacle.NazvanieSpektakla,
                     Genre = randomSpectacle.Genre,
@@ -245,7 +254,7 @@ namespace Akce{
         public void InformacePredstaveni(){
             Console.WriteLine("Все представления:");
             foreach (var predstaveni in PredstaveniD){
-                Console.WriteLine($"Название зала: {predstaveni.NazevSalu}, Название спектакля: {predstaveni.NazvanieSpektakla}");
+                Console.WriteLine($"IDSeans: {predstaveni.ID} Название зала: {predstaveni.NazevSalu}, Название спектакля: {predstaveni.NazvanieSpektakla}");
                 Console.WriteLine($"Жанр: {predstaveni.Genre}, Описание: {predstaveni.OpisSpektakla}");
                 Console.WriteLine($"Время начала: {predstaveni.CasZacatku}, Продолжительность: {predstaveni.Delka}, Возрастное ограничение: {predstaveni.VekOgranic}");
                 Console.WriteLine();
@@ -261,6 +270,12 @@ namespace Akce{
                 {"Box", 1000}
             };
 
+            var secke = new Dictionary<string,int>{
+                {"Parter", 1},
+                {"Balcony", 2},
+                {"Box", 3}
+            };
+
             foreach (var predstaveni in PredstaveniD) {
                 var randomZal = Zaly.First(zal => zal.NazevSalu == predstaveni.NazevSalu);
                 foreach (var section in randomZal.Sections) {
@@ -268,8 +283,11 @@ namespace Akce{
                         for (int mistoradku = 1; mistoradku <= section.Value.MistoRadku; mistoradku++) {
                             int cenabiletu = cenasekci[section.Key];
                             string mesto = $" Sekce: {section.Key}, Radek: {radek}, Misto: {mistoradku}";
+                            int sekcecislo = secke[section.Key];
                             Bilety.Add(new BiletDivadlo {
                                 ID = unikedId++,
+                                IDPredstaveni = predstaveni.ID,
+                                SekceID = sekcecislo,
                                 NazvanieSpektakla = predstaveni.NazvanieSpektakla,
                                 CasZacatku = predstaveni.CasZacatku,
                                 CisloRadku = radek,
@@ -287,7 +305,7 @@ namespace Akce{
         public void InformaceVstupenky(){
             foreach (var bilety in Bilety){
                 Console.WriteLine(  $"Билет ID: {bilety.ID}, Nazvanie: {bilety.NazvanieSpektakla}, Cas zacatku: {bilety.CasZacatku}\n" +
-                                    $"Radek: {bilety.CisloRadku}, Misto: {bilety.MistoRadku}, CeleMisto: {bilety.CeleMisto}\n" +
+                                    $"Sekce: {bilety.SekceID}, Radek: {bilety.CisloRadku}, Misto: {bilety.MistoRadku}, CeleMisto: {bilety.CeleMisto}\n" +
                                     $"Cena: {bilety.Cena}, Dostupnost: {bilety.IsSold}\n \n");
             }
         }
@@ -303,6 +321,16 @@ namespace Akce{
 
         public void FilterPredstaveniByGenre(string genre) {
             PredstaveniD = PredstaveniD.Where(predstaveni => predstaveni.Genre == genre).ToList();
+        }
+
+        public List<ZalDivadlo> GetZalyData(){return Zaly;}
+        public List<PredstaveniDivadlo> GetSeansyData(){return PredstaveniD;}
+        public void SetSeansyData(List<PredstaveniDivadlo> nastPredst){
+            PredstaveniD = nastPredst;
+        }
+        public List<BiletDivadlo> GetBiletyData(){return Bilety;}
+        public void SetBiletyData(List<BiletDivadlo> nasBilety){
+            Bilety = nasBilety;
         }
 
     }
@@ -361,22 +389,31 @@ namespace Akce{
 
 
     public class Client{
-        private IAkce Akce;
+        private IAkce Akces;
+        private string exit;
 
         public Client(IAkceFactory factory){
-            Akce = factory.CreateAkce();
+            Akces = factory.CreateAkce();
+        }
+
+        public void ExecuteCommand(ICommand Command){
+            Command.Execute(Akces);
+        }
+
+        public void UndoCommand(ICommand Command){
+            Command.Undo(Akces);
         }
         
         public void Predstaveni(){
-            Akce.InformacePredstaveni();
+            Akces.InformacePredstaveni();
         }
 
         public void Vstupenky(){
-            Akce.InformaceVstupenky();
+            Akces.InformaceVstupenky();
         }
 
         public void InformaceSaly(){
-            Akce.InformaceSaly();
+            Akces.InformaceSaly();
         }
     }
 }   
