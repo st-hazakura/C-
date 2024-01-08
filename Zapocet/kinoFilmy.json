@@ -1,36 +1,36 @@
 [
     {
-        "FilmName": "Смех и радость",
+        "FilmName": "Smích a radost",
         "AgeRestriction": 12,
-        "Genre": "Комедия",
-        "Description": "Лёгкая и забавная комедия о приключениях друзей во время летнего отпуска."
+        "Genre": "Komedie",
+        "Description": "Lehká a zábavná komedie o dobrodružstvích přátel během letní dovolené."
     },
 
     {
-        "FilmName": "Ночной кошмар",
+        "FilmName": "Noční můra",
         "AgeRestriction": 16,
-        "Genre": "Хоррор",
-        "Description": "Захватывающий триллер о группе друзей, столкнувшихся с необъяснимыми явлениями в заброшенном доме."
+        "Genre": "Horor",
+        "Description": "Poutavý thriller o skupině přátel, kteří čelí nevysvětlitelným jevům v opuštěném domě."
     },
 
     {
-        "FilmName": "Призраки прошлого",
+        "FilmName": "Přízraky minulosti",
         "AgeRestriction": 18,
-        "Genre": "Хоррор",
-        "Description": "Мрачная история о паранормальных событиях, разворачивающихся в старинном особняке."
+        "Genre": "Horor",
+        "Description": "Temný příběh o paranormálních událostech, které se odehrávají ve starém sídle."
     },
 
     {
-        "FilmName": "Забавный случай",
+        "FilmName": "Zábavný případ",
         "AgeRestriction": 18,
-        "Genre": "Комедия",
-        "Description": "Комедия для взрослых о неожиданной встрече двух старых друзей, которая оборачивается целой серией забавных ситуаций."
+        "Genre": "Komedie",
+        "Description": "Komedie pro dospělé o neočekávaném setkání dvou starých přátel, které se obrátí v sérii zábavných situací."
     },
 
     {
-        "FilmName": "Летнее приключение",
+        "FilmName": "Letní dobrodružství",
         "AgeRestriction": 12,
-        "Genre": "Комедия",
-        "Description": "Весёлая история о летних приключениях школьников, которые отправляются в поход на природу."
+        "Genre": "Komedie",
+        "Description": "Veselý příběh o letních dobrodružstvích školáků, kteří se vydávají na výlet do přírody."
     }
 ]

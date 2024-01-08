@@ -1,6 +1,6 @@
 [
     {
-        "NazevSalu": "Сценическая Симфония", 
+        "NazevSalu": "Jevištní Symfonie", 
         "Sections": {
             "Parter": {"Radek": 2, "MistoRadku": 4}, 
             "Balcony": {"Radek": 1, "MistoRadku": 6}, 
@@ -8,7 +8,7 @@
     }, 
     
     {
-        "NazevSalu": "Актерский Этюд", 
+        "NazevSalu": "Herecká Etuda", 
         "Sections": {
             "Parter": {"Radek": 3, "MistoRadku": 6}, 
             "Balcony": {"Radek": 1, "MistoRadku": 7}, 
@@ -17,7 +17,7 @@
     }, 
     
     {
-        "NazevSalu": "Зал Гармонии", 
+        "NazevSalu": "Sál Harmonie", 
         "Sections": {
             "Parter": {"Radek": 4, "MistoRadku": 3}, 
             "Balcony": {"Radek": 2, "MistoRadku": 3}, 

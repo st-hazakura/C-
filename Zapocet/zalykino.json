@@ -1,17 +1,17 @@
 [
     {
         "ID": 1,
-        "Name": "Зал 1",
+        "Name": "Sál 1",
         "Capacity": 3
     },
     {
         "ID": 2,
-        "Name": "Зал 2",
+        "Name": "Sál 2",
         "Capacity": 2
     },
     {
         "ID": 3,
-        "Name": "Зал 3",
+        "Name": "Sál 3",
         "Capacity": 5
     }
 ]

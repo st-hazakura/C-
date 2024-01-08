@@ -64,7 +64,7 @@ namespace Akce{
 
         public void GeneracePredstaveni(){
             Random rand = new Random();
-            int pocetpredstaveni = 5;
+            int pocetpredstaveni = 7;
             var startTime = new TimeSpan(10, 0, 0);
             var endTime = new TimeSpan(22, 0, 0);
             var currentTime = startTime;
@@ -89,9 +89,22 @@ namespace Akce{
 
         public void InformacePredstaveni(){
             foreach (var seans in Seansy){
-                Console.WriteLine($"Сеанс ID: {seans.ID}, Фильм: {seans.FilmName}, Начало: {seans.StartTime}, Зал: {seans.ZalID}");
-                Console.WriteLine($"  Жанр: {seans.Genre}, Возрастное ограничение: {seans.AgeRestriction}");
-                Console.WriteLine($"  Описание: {seans.Description}\n");
+                Console.WriteLine("┌───────────────────────────────────────────────────────────────────────────────────────");
+                Console.WriteLine($"│ SeansID: {seans.ID}, Nazev Filmu: {seans.FilmName}, Zacatek: {seans.StartTime}");
+                Console.WriteLine($"│ Genre: {seans.Genre}, Age Restriction: {seans.AgeRestriction}                         ");
+                Console.WriteLine("└───────────────────────────────────────────────────────────────────────────────────────\n");
+
+            }
+        }
+
+        public void InformacePredstaveniIDF(int seansID){
+            foreach (var seans in Seansy.Where(seans => seans.ID == seansID )){
+                Console.WriteLine("┌───────────────────────────────────────────────────────────────────────────────────────");
+                Console.WriteLine($"│ SeansID: {seans.ID}, Nazev Filmu: {seans.FilmName}, Zacatek: {seans.StartTime}, Sal: {seans.ZalID} ");
+                Console.WriteLine($"│ Genre: {seans.Genre}, Age Restriction: {seans.AgeRestriction}                         ");
+                Console.WriteLine($"│ Popis: {seans.Description}                                                          ");
+                Console.WriteLine("└───────────────────────────────────────────────────────────────────────────────────────\n");
+
             }
         }
 
@@ -124,6 +137,16 @@ namespace Akce{
         
         private static List<T> LoadData<T>(string filePath){
             return JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(filePath));
+        }
+
+        public void InformaceVstupenkyProSeansF(int seansID) {
+            Console.WriteLine($"Seance ID: {seansID}");
+            foreach (var bilet in Bilety.Where(b => b.SeansID == seansID)) {
+                Console.WriteLine("┌──────────────────────────────────────────────────────────────────────────────");
+                Console.WriteLine($"│ Dostupnost: {bilet.IsSold}, " );
+                Console.WriteLine($"│ Cislo mista: {bilet.SeatNumber}, Cena: {bilet.Price}");
+                Console.WriteLine("└──────────────────────────────────────────────────────────────────────────────\n");        
+            }
         }
 
         public void FilterPredstaveniByGenre(string genre){
@@ -261,6 +284,15 @@ namespace Akce{
             }
         }
 
+        public void InformacePredstaveniIDD(int seansID){
+            foreach(var predstaveni in PredstaveniD.Where(predstaveni => predstaveni.ID == seansID)){
+                Console.WriteLine($"IDSeans: {predstaveni.ID} Название зала: {predstaveni.NazevSalu}, Название спектакля: {predstaveni.NazvanieSpektakla}");
+                Console.WriteLine($"Жанр: {predstaveni.Genre}, Описание: {predstaveni.OpisSpektakla}");
+                Console.WriteLine($"Время начала: {predstaveni.CasZacatku}, Продолжительность: {predstaveni.Delka}, Возрастное ограничение: {predstaveni.VekOgranic}");
+                Console.WriteLine();
+            }
+        }
+        
 
         public void GeneraceVstupenek() {
             int unikedId = Bilety.Count + 1;
@@ -310,6 +342,13 @@ namespace Akce{
             }
         }
 
+        public void InformaceVstupenkyProSeansD(int seansID) {
+            foreach(var bilety in Bilety.Where(bilet => bilet.IDPredstaveni == seansID))
+                Console.WriteLine(  $"Билет ID: {bilety.ID}, Nazvanie: {bilety.NazvanieSpektakla}, Cas zacatku: {bilety.CasZacatku}\n" +
+                                    $"Sekce: {bilety.SekceID}, Radek: {bilety.CisloRadku}, Misto: {bilety.MistoRadku}, CeleMisto: {bilety.CeleMisto}\n" +
+                                    $"Cena: {bilety.Cena}, Dostupnost: {bilety.IsSold}\n \n");
+        }
+
         private static List<T> LoadData<T>(string filePath){
             return JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(filePath));
         }
@@ -346,7 +385,7 @@ namespace Akce{
             Kino kino = new Kino();
             kino.GeneracePredstaveni();
             kino.GeneraceVstupenek();
-            kino.FilterPredstaveniByGenre("Комедия");
+            kino.FilterPredstaveniByGenre("Komedie");
             kino.FilterVstupenkyByGenre();
             return kino;
         }
@@ -357,7 +396,7 @@ namespace Akce{
             Kino kino = new Kino();
             kino.GeneracePredstaveni();
             kino.GeneraceVstupenek();
-            kino.FilterPredstaveniByGenre("Хоррор");
+            kino.FilterPredstaveniByGenre("Horor");
             kino.FilterVstupenkyByGenre();
             return kino;
         }
@@ -369,7 +408,7 @@ namespace Akce{
             Divadlo divadlo = new Divadlo();
             divadlo.GeneracePredstaveni();
             divadlo.GeneraceVstupenek();
-            divadlo.FilterPredstaveniByGenre("Мюзикл");
+            divadlo.FilterPredstaveniByGenre("Muzikál");
             divadlo.FilterBiletyByGenre();
             return divadlo;
         }
@@ -380,7 +419,7 @@ namespace Akce{
             Divadlo divadlo = new Divadlo();
             divadlo.GeneracePredstaveni();
             divadlo.GeneraceVstupenek();
-            divadlo.FilterPredstaveniByGenre("Драма");
+            divadlo.FilterPredstaveniByGenre("Drama");
             divadlo.FilterBiletyByGenre();
             return divadlo;
         }
@@ -390,18 +429,13 @@ namespace Akce{
 
     public class Client{
         private IAkce Akces;
-        private string exit;
+        public List<Bilet> KupleneBilety { get; set; }
+        public int BankovniUcet { get; set; }
 
         public Client(IAkceFactory factory){
             Akces = factory.CreateAkce();
-        }
-
-        public void ExecuteCommand(ICommand Command){
-            Command.Execute(Akces);
-        }
-
-        public void UndoCommand(ICommand Command){
-            Command.Undo(Akces);
+            BankovniUcet = 2000;
+            KupleneBilety = new List<Bilet>();
         }
         
         public void Predstaveni(){
@@ -414,6 +448,16 @@ namespace Akce{
 
         public void InformaceSaly(){
             Akces.InformaceSaly();
+        }
+
+        public IAkce GetContext(){return Akces;}
+        
+        public void ExecuteCommand(ICommand Command){
+            Command.Execute(Akces);
+        }
+
+        public void UndoCommand(ICommand Command){
+            Command.Undo(Akces);
         }
     }
 }   

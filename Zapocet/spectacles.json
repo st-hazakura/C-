@@ -1,37 +1,37 @@
 [
     {
-        "NazvanieSpektakla": "Маскарад",
-        "OpisSpektakla": "Драматическая история о любви, обмане и трагедии.",
-        "Genre": "Драма",
-        "Delka": "2 часа",
+        "NazvanieSpektakla": "Maškaráda",
+        "OpisSpektakla": "Dramatický příběh o lásce, podvodu a tragédii.",
+        "Genre": "Drama",
+        "Delka": "2 hodiny",
         "VekOgranic": 12
     },
     {
-        "NazvanieSpektakla": "Смех сквозь слезы",
-        "OpisSpektakla": "Драма о жизненных перипетиях обычной семьи.",
-        "Genre": "Драма",
-        "Delka": "1.5 часа",
+        "NazvanieSpektakla": "Smích skrz slzy",
+        "OpisSpektakla": "Drama o životních peripetiích obyčejné rodiny.",
+        "Genre": "Drama",
+        "Delka": "1.5 hodiny",
         "VekOgranic": 6
     },
     {
-        "NazvanieSpektakla": "Тайны старого замка",
-        "OpisSpektakla": "Захватывающий мюзикл о приключениях в загадочном замке.",
-        "Genre": "Мюзикл",
-        "Delka": "2.5 часа",
+        "NazvanieSpektakla": "Tajemství starého zámku",
+        "OpisSpektakla": "Poutavý muzikál o dobrodružstvích v tajemném zámku.",
+        "Genre": "Muzikál",
+        "Delka": "2.5 hodiny",
         "VekOgranic": 12
     },
     {
-        "NazvanieSpektakla": "Лунный свет",
-        "OpisSpektakla": "Романтическая история, разворачивающаяся в волшебном лесу.",
-        "Genre": "Драма",
-        "Delka": "2 часа",
+        "NazvanieSpektakla": "Měsíční svit",
+        "OpisSpektakla": "Romantický příběh, který se odehrává v kouzelném lese.",
+        "Genre": "Drama",
+        "Delka": "2 hodiny",
         "VekOgranic": 16
     },
     {
-        "NazvanieSpektakla": "Приключения на острове",
-        "OpisSpektakla": "Семейный спектакль о необычных приключениях на затерянном острове.",
-        "Genre": "Мюзикл",
-        "Delka": "1 час",
+        "NazvanieSpektakla": "Dobrodružství na ostrově",
+        "OpisSpektakla": "Rodinný spektakl o neobvyklých dobrodružstvích na opuštěném ostrově.",
+        "Genre": "Muzikál",
+        "Delka": "1 hodina",
         "VekOgranic": 0
     }
 ]

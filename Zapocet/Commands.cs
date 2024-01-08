@@ -5,134 +5,87 @@ namespace Akce{
         void Undo(IAkce akce);
     }
 
-    public class VyberFilmuIDCommand : ICommand {
-        private int ID;
-        private List<Seans> originalSeansy;
-        private List<PredstaveniDivadlo> originalPredstaveni;
+    public class KoupitBiletCommand: ICommand{
 
-        public VyberFilmuIDCommand(int id) {
-            ID = id;
-        }
-
-        public void Execute(IAkce akce) {
-            if (akce is Kino kino){
-                ExecuteProFilm(kino, ID);
-                kino.InformacePredstaveni();
-            }else if (akce is Divadlo divadlo){
-                ExicuteProDivadlo(divadlo, ID);
-                divadlo.InformacePredstaveni();
-            }
-        }
-
-        public void Undo(IAkce akce) {
-            if (akce is Kino kino){
-                kino.SetSeansyData(originalSeansy);
-                kino.InformacePredstaveni();
-            }else if (akce is Divadlo divadlo){
-                divadlo.SetSeansyData(originalPredstaveni);
-                divadlo.InformacePredstaveni();
-            }
-        }
-
-
-        private void ExecuteProFilm(Kino kino, int IDFilm){
-            originalSeansy = new List<Seans>(kino.GetSeansyData());
-            List<Seans> FiltrSeanse = kino.GetSeansyData().Where(seans => seans.ID == IDFilm).ToList();
-            kino.SetSeansyData(FiltrSeanse);
-        }
-
-        private void ExicuteProDivadlo(Divadlo divadlo, int IDPredst){
-            originalPredstaveni = new List<PredstaveniDivadlo>(divadlo.GetSeansyData());
-            List<PredstaveniDivadlo> FiltrPred = divadlo.GetSeansyData().Where(pred => pred.ID == IDPredst).ToList();
-            divadlo.SetSeansyData(FiltrPred);
-        }
-    }
-
-    public class VyberBiletaIDCommand: ICommand{
-        private List<Bilet> origvstfilm;
-        private List<BiletDivadlo> origDivadlo;
-        private List<Seans> seance;
-        private List<PredstaveniDivadlo> seanceD;
-
-        public void Execute(IAkce akce) {
-            if (akce is Kino kino){
-                ExecuteVstupenkyFilm(kino);
-                kino.InformaceVstupenky();
-            }else if (akce is Divadlo divadlo){
-                ExecuteVstupenkyDivadlo(divadlo);
-                divadlo.InformaceVstupenky();
-            }
-        }
-
-        public void Undo(IAkce akce){
-            if (akce is Kino kino){
-                kino.SetBiletyData(origvstfilm);
-            }else if (akce is Divadlo divadlo){
-                divadlo.SetBiletyData(origDivadlo);
-            }
-        }
-
-        public void ExecuteVstupenkyFilm(Kino kino){
-            origvstfilm = new List<Bilet>(kino.GetBiletyData());
-            seance = new List<Seans>(kino.GetSeansyData());
-            int seansID = seance.First().ID;
-
-            List<Bilet> filtrdata = kino.GetBiletyData().Where(bilet => bilet.SeansID == seansID).ToList();
-            kino.SetBiletyData(filtrdata);
-        }
-
-        public void ExecuteVstupenkyDivadlo(Divadlo divadlo){
-            origDivadlo = new List<BiletDivadlo>(divadlo.GetBiletyData());
-            seanceD = new List<PredstaveniDivadlo>(divadlo.GetSeansyData());
-            int seansID = seanceD.First().ID;
-
-            List<BiletDivadlo> filrData = divadlo.GetBiletyData().Where(bilet => bilet.IDPredstaveni == seansID).ToList();
-            divadlo.SetBiletyData(filrData);
-        }
-    }
-
-
-    public class VyberMistaCommand: ICommand{
-        private int Misto;
         private int Radek;
         private int Poloha;
-        private List<Bilet> originalBiletyFilm;
-        private List<BiletDivadlo> originalBiletyDivadlo;
+        private int seanseIDD;
+        private List<BiletDivadlo> koupenybiletDivadlo;
 
-        public VyberMistaCommand(int misto){
-            Misto = misto;
-        }
-        public VyberMistaCommand(int misto, int radek, int poloha): this(misto){
-            Radek = radek;
-            Poloha = poloha;
+
+        private Kino kino;
+        private int misto;
+        private int seanseID;
+        private Client client;
+        private int biletID;
+
+        public KoupitBiletCommand(Kino kino, int misto, int seanseID, Client client) { 
+            this.kino = kino;
+            this.misto = misto; 
+            this.seanseID = seanseID;
+            this.client = client;
         }
 
+        public KoupitBiletCommand(Kino kino, int biletID, Client client) { 
+            this.kino = kino;
+            this.biletID = biletID;
+            this.client = client;
+        }
+        
         public void Execute(IAkce akce){
             if (akce is Kino kino){
-                ExecuteProFilm(kino, Misto);
-                kino.InformaceVstupenky();
+                ExecuteProFilm(kino, misto, seanseID, client);
             }else if (akce is Divadlo divadlo){
-                ExecuteProDivadlo(divadlo, Misto, Radek, Poloha);
+                // ExecuteProDivadlo(divadlo, Misto, Radek, Poloha);
                 divadlo.InformaceVstupenky();
             }
         }
 
         public void Undo(IAkce akce){
+            if (akce is Kino kino){
+                UndoProFilm( kino, biletID, client);
+            }else if (akce is Divadlo divadlo){
+                // ExecuteProDivadlo(divadlo, Misto, Radek, Poloha);
+                divadlo.InformaceVstupenky();
+            }
 
         }
 
-        private void ExecuteProFilm(Kino kino, int misto){
-            // seance = new List<Seans>(kino.GetSeansyData());
-            // originalBiletyFilm = new List<Bilet>(kino.GetBiletyData());
-            // List<Bilet> filtredBilet = kino.GetBiletyData().Where(bilet => bilet.SeatNumber == misto ).ToList();
-            // kino.SetBiletyData(filtredBilet);
+        private void ExecuteProFilm(Kino kino, int misto, int seanseID, Client client){
+            Bilet koupenyBiletFilm = kino.GetBiletyData().FirstOrDefault(bilet => bilet.SeatNumber == misto && bilet.SeansID == seanseID);
+            int dostpenez = client.BankovniUcet - koupenyBiletFilm.Price;
+            if (koupenyBiletFilm.IsSold) {
+                if (dostpenez>=0){
+                koupenyBiletFilm.IsSold = false;
+                client.BankovniUcet -= koupenyBiletFilm.Price; 
+                kino.SetBiletyData(kino.GetBiletyData());
+                client.KupleneBilety.Add(koupenyBiletFilm);}
+                else{Console.WriteLine("Nemate dost penez");}
+            }else{
+                Console.WriteLine("Tento bilet jiz koupeny");
+            }
         }
 
-        private void ExecuteProDivadlo(Divadlo divadlo, int misto, int radek, int poloha){
-            // originalBiletyDivadlo = new List<BiletDivadlo>(divadlo.GetBiletyData());
-            // List<BiletDivadlo> filtredBilet = divadlo.GetBiletyData().Where(bilet => 
-            //     bilet.MistoRadku == misto && bilet.CisloRadku == radek && bilet.SekceID == poloha).ToList();
-            // divadlo.SetBiletyData(filtredBilet);
+        private void UndoProFilm(Kino kino, int biletID, Client client){
+                Bilet bilet = client.KupleneBilety.FirstOrDefault(bil => bil.ID == biletID);
+                if (!bilet.IsSold){
+                    client.BankovniUcet += bilet.Price;
+                }else{Console.WriteLine("Bilet lze koupit chyba");}
+                Bilet vracenyBilet = kino.GetBiletyData().FirstOrDefault(bilet => bilet.ID == biletID );
+                if (!vracenyBilet.IsSold){
+                    vracenyBilet.IsSold = true;
+                    client.KupleneBilety.Remove(bilet);
+                }else{Console.WriteLine("Bilet nenalezen");}
         }
+        
+
     }
+
+        // private void ExecuteProDivadlo(Divadlo divadlo, int misto, int radek, int poloha){
+        //     // originalBiletyDivadlo = new List<BiletDivadlo>(divadlo.GetBiletyData());
+        //     // List<BiletDivadlo> filtredBilet = divadlo.GetBiletyData().Where(bilet => 
+        //     //     bilet.MistoRadku == misto && bilet.CisloRadku == radek && bilet.SekceID == poloha).ToList();
+        //     // divadlo.SetBiletyData(filtredBilet);
+        // }
+    
 }
